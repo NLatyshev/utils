@@ -18,6 +18,6 @@
  * @author NLatyshev
  */
 public class Test {
-    private int coHHHHHojolYunt;
+    private int coHHHHHojolYunt = 100;
 
 }
