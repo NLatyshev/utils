@@ -18,6 +18,6 @@
  * @author NLatyshev
  */
 public class Test {
-    private int count;
+    private int coHHHHHojolYunt;
 
 }

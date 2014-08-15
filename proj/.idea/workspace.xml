@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e42cb910-9127-4a3e-96d8-1851655b13e7" name="Default" comment="test class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Test.java" />
+    <list default="true" id="e42cb910-9127-4a3e-96d8-1851655b13e7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Test.java" afterPath="$PROJECT_DIR$/src/main/java/Test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="proj.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e42cb910-9127-4a3e-96d8-1851655b13e7" time="1408114251835" ignored="false" />
-    <file path="/Test.java" changelist="e42cb910-9127-4a3e-96d8-1851655b13e7" time="1408114176419" ignored="false" />
+    <file path="/Dummy.txt" changelist="e42cb910-9127-4a3e-96d8-1851655b13e7" time="1408114282326" ignored="false" />
+    <file path="/Test.java" changelist="e42cb910-9127-4a3e-96d8-1851655b13e7" time="1408114336587" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +79,7 @@
       <file leaf-file-name="Test.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="14" selection-start="471" selection-end="471" vertical-scroll-proportion="0.14382403">
+            <state line="20" column="28" selection-start="530" selection-end="530" vertical-scroll-proportion="0.23011844">
               <folding />
             </state>
           </provider>
@@ -326,7 +326,11 @@
       <created>1408114212655</created>
       <updated>1408114212655</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test class">
+      <created>1408114292484</created>
+      <updated>1408114292484</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -425,7 +429,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="471" selection-end="471" vertical-scroll-proportion="0.14382403">
+        <state line="20" column="28" selection-start="530" selection-end="530" vertical-scroll-proportion="0.23011844">
           <folding />
         </state>
       </provider>
