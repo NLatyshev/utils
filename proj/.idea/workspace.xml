@@ -7,7 +7,7 @@
     </list>
     <ignored path="proj.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e42cb910-9127-4a3e-96d8-1851655b13e7" time="1408114341348" ignored="false" />
+    <file path="/Dummy.txt" changelist="e42cb910-9127-4a3e-96d8-1851655b13e7" time="1408114470403" ignored="false" />
     <file path="/Test.java" changelist="e42cb910-9127-4a3e-96d8-1851655b13e7" time="1408114336587" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +94,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="test3" />
+      </map>
+    </option>
   </component>
   <component name="GitLogSettings">
     <option name="myDateState">
@@ -220,7 +225,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="70" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="66" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="70" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
@@ -228,9 +233,9 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="70" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="70" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="71" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="693" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="692" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="695" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="70" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="69" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -350,7 +355,11 @@
       <created>1408114347939</created>
       <updated>1408114347939</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test class">
+      <created>1408114473201</created>
+      <updated>1408114473201</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
