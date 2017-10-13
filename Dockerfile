@@ -16,4 +16,4 @@ COPY --from=0 /app/utils /app
 
 RUN ls -la
 
-RUN gradle clean test
+RUN sudo gradle clean test
