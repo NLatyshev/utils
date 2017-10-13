@@ -1,5 +1,8 @@
-# Removing DiffGram element in web service messages
-1. Some time ago I needed to integrate with unusual SOAP web service. It were using Microsoft’s [diffgram](http://msdn.microsoft.com/en-us/library/ms172088.aspx) elements and attributes in their output messages.  
+## 1. PayloadTransformingInterceptor
+Client-side thread-safe interceptor that transforms the payload of <code>WebServiceMessage</code> using XSLT stylesheet.  
+Look at test [spring application context](https://github.com/NLatyshev/utils/blob/master/spring/src/test/resources/test-application-context.xml) to find usage example
+#### Removing DiffGram element in web service messages
+Some time ago I needed to integrate with unusual SOAP web service. It were using Microsoft's [diffgram](http://msdn.microsoft.com/en-us/library/ms172088.aspx) elements and attributes in their output messages.  
 I found a good [article](https://pragmaticintegrator.wordpress.com/2011/03/27/removing-diffgram-element-in-web-service-messages/) where author came across the same problem.
 The module contains utility class implemented spring ws ClientInterceptor that transforms ws response based on xslt file and allows to use spring WebServiceTemplate as usual.
 Simple xs transformation just removes exceeded schema element and extract real data from diffgr element from response such as:
@@ -22,6 +25,7 @@ Simple xs transformation just removes exceeded schema element and extract real d
   </soap12:Body>
 </soap12:Envelope>
 ```
-
-2. The module contains one more interceptor to add session support to SOAP
+## 2. SoapSessionSupportInterceptor
+Client-side thread-safe interceptor that adds session support to SOAP interaction.  
+Look at test [spring application context](https://github.com/NLatyshev/utils/blob/master/spring/src/test/resources/test-application-context.xml) to find usage example
 
