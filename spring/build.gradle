@@ -1,2 +1,35 @@
 group 'com.github.nlatyshev'
 version '1.0-SNAPSHOT'
+
+buildscript{
+    repositories{
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'no.nils:wsdl2java:0.10'
+    }
+}
+
+apply plugin: 'no.nils.wsdl2java'
+
+dependencies {
+    compile 'org.springframework.ws:spring-ws-core:2.4.0.RELEASE'
+    compile 'org.apache.httpcomponents:httpclient:4.3.4'
+
+    testCompile 'org.springframework.ws:spring-ws-test:2.4.0.RELEASE'
+    testCompile group: 'org.mockito', name: 'mockito-all', version: '1.8.5'
+    testCompile group: 'org.spockframework', name: 'spock-core', version: '1.1-groovy-2.4'
+    testCompile group: 'org.spockframework', name: 'spock-spring', version: '1.1-groovy-2.4'
+    testCompile group: 'org.springframework', name: 'spring-core', version: '4.3.8.RELEASE'
+    testCompile group: 'org.springframework', name: 'spring-test', version: '4.3.8.RELEASE'
+}
+
+wsdl2java {
+    generatedWsdlDir = file("$buildDir/generated-sources")  // target directory for generated source code
+    wsdlDir = file("$projectDir/src/test/resources/wsdl") // define to support incremental build
+    wsdlsToGenerate = [//  2d-array of wsdls and cxf-parameters
+                       ['-xjc', '-b', "$projectDir/src/test/resources/wsdl/jaxws-binding.xml",
+                        "$projectDir/src/test/resources/wsdl/test-service.wsdl"]
+    ]
+}

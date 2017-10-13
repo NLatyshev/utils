@@ -1,2 +1,4 @@
 rootProject.name = 'utils'
-include 'spring'
+include 'spring-ws-support'
+
+project(":spring-ws-support").projectDir = file("spring")

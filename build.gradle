@@ -1,6 +1,10 @@
 group 'com.github.nlatyshev'
 version '1.0-SNAPSHOT'
 
+allprojects {
+    apply plugin: 'maven'
+}
+
 subprojects {
     apply plugin: 'groovy'
     apply plugin: 'java'
@@ -13,7 +17,7 @@ subprojects {
     }
 
     dependencies {
-        compile 'org.codehaus.groovy:groovy-all:2.4.9'
+        testCompile 'org.codehaus.groovy:groovy-all:2.4.9'
         testCompile group: 'org.spockframework', name: 'spock-core', version: '1.1-groovy-2.4'
         testCompile group: 'org.spockframework', name: 'spock-spring', version: '1.1-groovy-2.4'
     }

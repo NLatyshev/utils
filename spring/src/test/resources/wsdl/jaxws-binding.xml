@@ -1,0 +1,19 @@
+<jaxws:bindings
+        xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+        xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+        xmlns:jaxws="http://java.sun.com/xml/ns/jaxws">
+
+    <jaxws:enableWrapperStyle>false</jaxws:enableWrapperStyle>
+
+    <!-- set default package structure -->
+    <jaxws:package name="com.github.nlatyshev.spring.ws.client.support.interceptor.diffgram"/>
+
+    <jaxws:bindings node="wsdl:definitions/wsdl:types/xsd:schema">
+        <jaxb:schemaBindings>
+            <jaxb:package name="com.github.nlatyshev.spring.ws.client.support.interceptor.diffgram.schema"/>
+        </jaxb:schemaBindings>
+    </jaxws:bindings>
+
+
+</jaxws:bindings>
+
