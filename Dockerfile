@@ -1,5 +1,9 @@
 FROM alpine/git
 
+RUN adduser gradle
+
+USER gradle
+
 RUN ls -la
 
 VOLUME "$PWD":/home/gradle/project
