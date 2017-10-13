@@ -10,6 +10,8 @@ RUN ls -la
 
 FROM gradle:alpine
 
+USER gradle
+
 RUN ls -la
 
 VOLUME "$PWD":/home/gradle/project
