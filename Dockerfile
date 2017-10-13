@@ -7,7 +7,7 @@ VOLUME "$PWD":/home/gradle/project
 WORKDIR /home/gradle/project
 RUN git clone https://github.com/NLatyshev/utils.git
 
-RUN cmod 777 *
+RUN chmod 777 *
 
 RUN ls -la
 
