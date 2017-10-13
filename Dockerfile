@@ -3,7 +3,7 @@ FROM alpine/git
 RUN ls -la
 
 WORKDIR /app
-RUN git clone https://github.com/spring-projects/spring-petclinic.git
+RUN git clone https://github.com/NLatyshev/utils.git
 
 RUN ls -la
 
