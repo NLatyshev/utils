@@ -1,4 +1,4 @@
-FROM: gradle:alpine
+FROM gradle:alpine
 
 RUN ["gradle", "clean"]
 RUN ["gradle", "test"]
