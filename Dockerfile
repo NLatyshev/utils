@@ -2,7 +2,8 @@ FROM alpine/git
 
 RUN ls -la
 
-WORKDIR /app
+VOLUME "$PWD":/home/gradle/project
+WORKDIR /home/gradle/project
 RUN git clone https://github.com/NLatyshev/utils.git
 
 RUN ls -la
@@ -14,7 +15,7 @@ RUN ls -la
 VOLUME "$PWD":/home/gradle/project
 WORKDIR /home/gradle/project
 
-COPY --from=0 /app/utils /home/gradle/project
+COPY --from=0 /home/gradle/project/utils /home/gradle/project
 
 
 RUN ls -la
