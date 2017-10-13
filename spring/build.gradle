@@ -23,6 +23,7 @@ dependencies {
     testCompile group: 'org.spockframework', name: 'spock-spring', version: '1.1-groovy-2.4'
     testCompile group: 'org.springframework', name: 'spring-core', version: '4.3.8.RELEASE'
     testCompile group: 'org.springframework', name: 'spring-test', version: '4.3.8.RELEASE'
+    testCompile group: 'org.springframework', name: 'spring-test', version: '4.3.8.RELEASE'
 }
 
 wsdl2java {
