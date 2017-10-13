@@ -14,6 +14,8 @@ RUN ls -la
 
 COPY --from=0 /app/utils /app
 
+RUN chmod 777 *
+
 RUN ls -la
 
-RUN sudo gradle clean test
+RUN gradle clean test
