@@ -1,6 +1,6 @@
 FROM gradle:alpine
 
-RUN ls -la
+RUN git clone https://github.com/NLatyshev/utils.git
 
 RUN ["gradle", "clean"]
 RUN ["gradle", "test"]
