@@ -8,13 +8,14 @@ RUN git clone https://github.com/NLatyshev/utils.git
 RUN ls -la
 
 FROM gradle:alpine
-WORKDIR /app
 
 RUN ls -la
 
-COPY --from=0 /app/utils /app
+VOLUME "$PWD":/home/gradle/project
+WORKDIR /home/gradle/project
 
-RUN chmod 777 *
+COPY --from=0 /app/utils /home/gradle/project
+
 
 RUN ls -la
 
