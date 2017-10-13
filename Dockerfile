@@ -1,6 +1,7 @@
+FROM alpine/git
+
 RUN ls -la
 
-FROM alpine/git
 WORKDIR /app
 RUN git clone https://github.com/spring-projects/spring-petclinic.git
 
