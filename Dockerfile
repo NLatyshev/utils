@@ -10,6 +10,8 @@ RUN ls -la
 FROM gradle:alpine
 WORKDIR /app
 
+RUN ls -la
+
 COPY --from=0 /app/utils /app
 
 RUN ls -la
