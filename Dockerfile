@@ -1,35 +1,10 @@
-FROM alpine/git
-
-RUN id
-
-RUN adduser -u 1000 git
-
+FROM alpine/git as clone
+RUN adduser -u 1000 -D -g '' git
 USER git
-
-RUN id
-
-RUN ls -la
-
-VOLUME "$PWD":/home/gradle/project
-WORKDIR /home/gradle/project
+WORKDIR /home/git
 RUN git clone https://github.com/NLatyshev/utils.git
 
-#RUN chmod 777 utils/*
-
-RUN ls -la
-
 FROM gradle:alpine
-
-RUN id
-
-RUN ls -la
-
-VOLUME "$PWD":/home/gradle/project
-WORKDIR /home/gradle/project
-
-COPY --from=0 /home/gradle/project/utils /home/gradle/project
-
-
-RUN ls -la
-
+WORKDIR /home/gradle
+COPY --chown=gradle --from=0 /home/git/utils /home/gradle
 RUN gradle clean test
