@@ -1,13 +1,18 @@
 FROM alpine/git
 
 RUN id
+
+RUN useradd -u 1000 git
+
+USER git
+
 RUN ls -la
 
 VOLUME "$PWD":/home/gradle/project
 WORKDIR /home/gradle/project
 RUN git clone https://github.com/NLatyshev/utils.git
 
-RUN chmod 777 utils/*
+#RUN chmod 777 utils/*
 
 RUN ls -la
 
