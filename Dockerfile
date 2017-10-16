@@ -6,6 +6,8 @@ RUN git clone https://github.com/NLatyshev/utils.git
 
 FROM gradle:alpine
 WORKDIR /home/gradle
-COPY --chown=gradle --from=clone /home/git/utils /home/gradle
+COPY --from=clone /home/git/utils /home/gradle
+USER root
 RUN chown -R gradle *
+USER gradle
 RUN gradle clean test
