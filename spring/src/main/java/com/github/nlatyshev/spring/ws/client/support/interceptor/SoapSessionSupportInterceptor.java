@@ -28,7 +28,7 @@ public class SoapSessionSupportInterceptor implements ClientInterceptor {
     private ThreadLocal<String[]> sessionHolder = new ThreadLocal<String[]>();
 
     /**
-     * Add 'Cookie' header with held 'Set-Cookie' header values.
+     * Add 'Cookie' header held 'Set-Cookie' header values.
      *
      * @param messageContext the message context
      * @return always <code>true</code>
