@@ -2,9 +2,11 @@ FROM alpine/git
 
 RUN id
 
-RUN useradd -u 1000 git
+RUN adduser -u 1000 git
 
 USER git
+
+RUN id
 
 RUN ls -la
 
